@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Atividades</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Controle de Atividades</h1>
+    <form id="activity-form">
+        <label for="activity-id">ID:</label>
+        <input type="text" id="activity-id" required>
+        
+        <label for="activity-desc">Descrição:</label>
+        <input type="text" id="activity-desc" required>
+        
+        <label for="activity-date">Data de Entrega:</label>
+        <input type="date" id="activity-date" required>
+        
+        <button type="submit">Adicionar Atividade</button>
+    </form>
+    <table id="activity-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Descrição</th>
+                <th>Data de Entrega</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Atividades serão inseridas aqui -->
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
